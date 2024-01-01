@@ -1,5 +1,8 @@
 name: Deployment (Container)
-on: workflow_dispatch
+on:
+  push:
+      branches: [main]
+
 env:
   CACHE_KEY: node-deps
   MONGODB_DB_NAME: gha-demo
